@@ -12,7 +12,7 @@ spec:
         kind: HelmRepsitory
         name: podinfo
         namespace: team-helm
-    interval: 10m 
-    values: 
-     ui: 
-       color: "#4f00a3"
+  interval: 10m 
+  values: 
+    ui: 
+      color: "#4f00a3"
