@@ -9,7 +9,7 @@ spec:
     spec:
       chart: podinfo
       sourceRef:
-        kind: HelmRepsitory
+        kind: HelmRepository
         name: podinfo
         namespace: team-helm
   interval: 10m 
