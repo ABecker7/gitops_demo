@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: podinfo
-spec: 
+spec:
   selector:
     matchLabels:
       app: podinfo
-  template: 
-    metadata: 
+  template:
+    metadata:
       labels:
         app: podinfo
-    spec: 
-      containers: 
+    spec:
+      containers:
         - name: podinfo
-          image: ghcr.io/stefanprodan/podinfo:5.0.0 # {"$imagepolicy": "flux-system:podinfo"}
+          image: ghcr.io/stefanprodan/podinfo:6.7.1 # {"$imagepolicy": "flux-system:podinfo"}
           imagePullPolicy: IfNotPresent
-          ports: 
+          ports:
             - name: http
               containerPort: 9898
               protocol: TCP
