@@ -11,11 +11,11 @@ spec:
         labels:
           app: podinfo
       spec: 
-      containers: 
+        containers: 
         - name: podinfo
           image: ghcr.io/stefanprodan/podinfo:5.0.0
           imagePullPolicy: IfNotPresent
           ports: 
-            - name: http
-              containerPort: 9898
-              protocol: TCP
+          - name: http
+            containerPort: 9898
+            protocol: TCP
