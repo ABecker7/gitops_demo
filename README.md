@@ -2,11 +2,11 @@ What gitops is:
 
 Problems git ops solves over traditional push based: 
 
-Install flux cli (https://fluxcd.io/flux/installation/#install-the-flux-cli)
-Bootstrap flux (https://fluxcd.io/flux/components/)
-Repo Structure (https://fluxcd.io/flux/guides/repository-structure/)
+- Install flux cli (https://fluxcd.io/flux/installation/#install-the-flux-cli)
+- Bootstrap flux (https://fluxcd.io/flux/components/)
+- Repo Structure (https://fluxcd.io/flux/guides/repository-structure/)
 
-`
+```
 clusters
     gitops-demo
 apps
@@ -14,7 +14,7 @@ apps
     team-overay
     team-helm
 flux-image-automation
-`
+```
 
 ## Kustomize and Helm
 ---
