@@ -5,8 +5,11 @@ metadata:
 spec:
   selector:
     matchLabels:
+      app: hive
+  template:
+    metadata:
       labels:
-        app: hive
+        app: hive 
     spec:
       containers:
         - name: hive
