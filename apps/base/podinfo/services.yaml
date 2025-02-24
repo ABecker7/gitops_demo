@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: podinfo
+
+spec:
+  ports:
+    - name: pod
+      port: 9898
+      targetPort: pod
+
+  selector:
+    app: pod
