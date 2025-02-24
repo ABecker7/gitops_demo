@@ -32,14 +32,14 @@ rules:
       - get
       - list
       - watch
-  -apiGroups:
+  - apiGroups:
       - extensions
       - networking.k8s.io
     resources:
       - ingress/status
     verbs:
       - update
-  -apiGroups:
+  - apiGroups:
       - traefik.io
     resources:
       - middlewares
