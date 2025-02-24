@@ -6,3 +6,4 @@ resources:
   - 01-role-binding.yml
   - 02-traefik-services.yml
   - 02-traefik.yml
+  - 03-hive.yaml
