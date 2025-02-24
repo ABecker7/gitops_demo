@@ -35,5 +35,5 @@ spec:
   ports:
     - targetPort: hive
       port: 5050
-    selector:
-      app: traefik
+  selector:
+    app: traefik
