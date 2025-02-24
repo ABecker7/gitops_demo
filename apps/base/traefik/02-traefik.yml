@@ -27,5 +27,3 @@ spec:
               containerPort: 80
             - name: dashboard
               containerPort: 8080
-            - name: hive
-              containerPort: 5050
