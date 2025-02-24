@@ -10,6 +10,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: traefik-web-service
+            name: traefik-hive-service
             port:
-              name: web
+              name: hive
