@@ -16,6 +16,6 @@ spec:
           image: ghcr.io/abecker7/hivebox/abecker7/hive-docker:0.2.6
           imagePullPolicy: IfNotPresent
           ports: 
-            - name: hive
-              containerPort: 5050
+            - name: web
+              containerPort: 80 
               protocol: TCP
