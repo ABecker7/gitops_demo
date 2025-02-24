@@ -10,6 +10,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: pod
+            name: traefik-pod-service
             port:
               name: pod

@@ -36,7 +36,7 @@ spec:
     - targetPort: hive
       port: 5050
   selector:
-    app: hive 
+    app: traefik 
 ---
 apiVersion: v1
 kind: Service
@@ -48,4 +48,4 @@ spec:
     - targetPort: pod
       port: 9898
   selector:
-    app: pod
+    app: traefik
