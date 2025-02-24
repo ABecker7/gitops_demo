@@ -40,8 +40,10 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-metadata:
+metadata: 
   name: traefik-pod-service
+  
+spec:
   ports:
     - targetPort: pod
       port: 9898
