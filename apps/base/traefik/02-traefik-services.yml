@@ -32,7 +32,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - targetPort: 5050
+    - targetPort: hive 
       port: 5050
   selector:
     app: hive 
