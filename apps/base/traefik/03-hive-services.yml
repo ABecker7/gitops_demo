@@ -7,7 +7,7 @@ spec:
   ports:
     - name: hive
       port: 5050 
-      targetPort: hive
+      targetPort: 5050
 
   selector:
     app: hive
