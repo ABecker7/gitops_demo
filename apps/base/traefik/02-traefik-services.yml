@@ -23,16 +23,3 @@ spec:
       port: 80
   selector:
     app: traefik
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: traefik-hive-service
-
-spec:
-  type: LoadBalancer
-  ports:
-    - targetPort: hive 
-      port: 5050
-  selector:
-    app: hive 
