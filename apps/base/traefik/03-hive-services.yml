@@ -5,9 +5,8 @@ metadata:
 
 spec:
   ports:
-    - name: hive
-      port: 5050 
-      targetPort: 5050
+    - port: 5050 
+      targetPort: hive 
 
   selector:
     app: hive
