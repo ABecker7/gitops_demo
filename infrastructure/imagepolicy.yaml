@@ -9,3 +9,13 @@ spec:
   policy:
     semver: 
       range: ">=5.0.0"
+--- 
+metadata:
+  name: hive
+    namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: hive
+  policy:
+    semver:
+      range: ">=0.3.0"
