@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: elasticsearch 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+  template:
+    metadata:
+      labels:
+        app: elasticsearch 
+    spec:
+      containers:
+        - name: elasticsearch 
+          image: elastic/elasticsearch:8.16.5 
+          imagePullPolicy: IfNotPresent
+          ports: 
+            - name: elasticsearch 
+              containerPort: 9200 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logstash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logstash
+  template:
+    metadata:
+      labels:
+        app: logstash
+    spec:
+      containers:
+        - name: logstash
+          image: elastic/logstash:8.16.5
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: logstash1
+              containerPort: 5044
+            - name: logstash2
+              containerPort: 9600
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kibana
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - name: kibana
+          image: elastic/kibana:8.16.5
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: kibana
+              containerPort: 5601
