@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - elasticsearch_statefulset.yaml
   - elasticsearch_svc.yaml
-  - kube-logging.yaml
